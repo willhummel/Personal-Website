@@ -1,0 +1,192 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Will Hummel - Educational Consulting</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@300;400;500&family=Crimson+Text:wght@400;600&display=swap" rel="stylesheet">
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: 'Crimson Text', serif;
+            background-color: #f4f1ea;
+            color: #1a1a1a;
+            height: 100vh;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            padding: 2rem 1.5rem;
+        }
+
+        .container {
+            max-width: 42rem;
+            width: 100%;
+        }
+
+        /* Header */
+        header {
+            text-align: center;
+            margin-bottom: 1.5rem;
+        }
+
+        h1 {
+            font-family: 'Cormorant Garamond', serif;
+            font-size: 2.25rem;
+            font-weight: 300;
+            letter-spacing: 0.02em;
+            margin-bottom: 0.5rem;
+        }
+
+        .divider-small {
+            height: 1px;
+            width: 6rem;
+            background-color: rgba(26, 26, 26, 0.2);
+            margin: 0 auto 1rem;
+        }
+
+        /* Main Content */
+        main {
+            display: flex;
+            flex-direction: column;
+            gap: 1.5rem;
+        }
+
+        section {
+            text-align: center;
+        }
+
+        /* Biography */
+        .biography-box {
+            max-width: 36rem;
+            margin: 0 auto;
+            padding: 1.5rem;
+            border: 1px solid rgba(26, 26, 26, 0.12);
+            background-color: rgba(234, 230, 220, 0.3);
+        }
+
+        .biography-box p {
+            font-size: 0.9375rem;
+            line-height: 1.65;
+            color: rgba(26, 26, 26, 0.8);
+        }
+
+        /* Services */
+        h2 {
+            font-family: 'Cormorant Garamond', serif;
+            font-size: 1.375rem;
+            font-weight: 400;
+            letter-spacing: 0.02em;
+            margin-bottom: 1.25rem;
+        }
+
+        .services-grid {
+            display: grid;
+            grid-template-columns: 1fr;
+            gap: 1.5rem;
+        }
+
+        @media (min-width: 768px) {
+            .services-grid {
+                grid-template-columns: repeat(3, 1fr);
+            }
+        }
+
+        .service-item {
+            display: flex;
+            flex-direction: column;
+            gap: 0.375rem;
+        }
+
+        .service-item h3 {
+            font-family: 'Crimson Text', serif;
+            font-size: 0.9375rem;
+            font-weight: 600;
+            letter-spacing: 0.02em;
+        }
+
+        .service-item p {
+            font-size: 0.875rem;
+            color: #6b6b6b;
+        }
+
+        /* Divider */
+        .divider-full {
+            height: 1px;
+            width: 100%;
+            background-color: rgba(26, 26, 26, 0.12);
+        }
+
+        /* Contact Button */
+        .consultation-button {
+            display: inline-block;
+            padding: 0.75rem 2rem;
+            border: 1px solid rgba(26, 26, 26, 0.3);
+            background-color: transparent;
+            color: #1a1a1a;
+            font-family: 'Crimson Text', serif;
+            font-size: 0.875rem;
+            letter-spacing: 0.05em;
+            text-transform: uppercase;
+            text-decoration: none;
+            transition: background-color 0.2s ease;
+        }
+
+        .consultation-button:hover {
+            background-color: rgba(26, 26, 26, 0.05);
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <!-- Header -->
+        <header>
+            <h1>Will Hummel</h1>
+            <div class="divider-small"></div>
+        </header>
+
+        <!-- Main Content -->
+        <main>
+            <!-- Biography -->
+            <section>
+                <div class="biography-box">
+                    <p>Strategic advisor with 15 years of experience in college admissions and independent schools. Formerly Director of College Counseling at The Dalton School, with previous admissions tenures at Pomona College and Barnard College.</p>
+                </div>
+            </section>
+
+            <!-- Services -->
+            <section>
+                <h2>Services</h2>
+                <div class="services-grid">
+                    <div class="service-item">
+                        <h3>Educational consulting</h3>
+                        <p>Intentional course selection, extracurricular focus, and institutional navigation</p>
+                    </div>
+                    <div class="service-item">
+                        <h3>Narrative distinction</h3>
+                        <p>Essays that are differentiated and effective</p>
+                    </div>
+                    <div class="service-item">
+                        <h3>Application tactics</h3>
+                        <p>Comprehensive assessment of list construction and application materials</p>
+                    </div>
+                </div>
+            </section>
+
+            <!-- Divider -->
+            <div class="divider-full"></div>
+
+            <!-- Contact -->
+            <section>
+                <a href="mailto:w.y.hummel@gmail.com?subject=Consultation%20Request&body=Hello%20Will,%0D%0A%0D%0AI%20would%20like%20to%20schedule%20a%20complementary%2020-minute%20consultation.%20I%20am%20available%20during%20the%20following%20days%20and%20times:%0D%0A%5BPlease%20enter%20at%20least%20three%20different%20days%5D" class="consultation-button">Request a Consultation</a>
+            </section>
+        </main>
+    </div>
+</body>
+</html>
